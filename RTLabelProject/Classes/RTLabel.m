@@ -39,7 +39,7 @@
 
 @interface RTLabelButton : UIButton
 @property (nonatomic, assign) int componentIndex;
-@property (nonatomic) NSURL *url;
+@property (nonatomic, copy) NSURL *url;
 @end
 
 @implementation RTLabelButton
@@ -260,7 +260,11 @@
 				else
 				{
 					[self applyBoldStyleToText:attrString atPosition:component.position withLength:[component.text length]];
-					[self applyColor:@"#FF0000" toText:attrString atPosition:component.position withLength:[component.text length]];
+#ifdef BIKENATUREGUIDE
+                    [self applyColor:@"#006446" toText:attrString atPosition:component.position withLength:[component.text length]];
+#else
+					[self applyColor:@"#4246a6" toText:attrString atPosition:component.position withLength:[component.text length]];
+#endif
 				}
 			}
 			else
