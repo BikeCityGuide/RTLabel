@@ -263,7 +263,7 @@
 #ifdef BIKENATUREGUIDE
                     [self applyColor:@"#006446" toText:attrString atPosition:component.position withLength:[component.text length]];
 #else
-                    [self applyColor:[Utilities hexStringFromColor:[Branding brandedColor]] toText:attrString atPosition:component.position withLength:[component.text length]];
+                    [self applyColor:[Utilities hexStringFromColor:[self.appBranding brandedColor]] toText:attrString atPosition:component.position withLength:[component.text length]];
 #endif
                     [self applySingleUnderlineText:attrString atPosition:component.position withLength:[component.text length]];
 				}
@@ -279,7 +279,7 @@
 #ifdef BIKENATUREGUIDE
                     [self applyColor:@"#006446" toText:attrString atPosition:component.position withLength:[component.text length]];
 #else
-                    [self applyColor:[Utilities hexStringFromColor:[Branding brandedColor]] toText:attrString atPosition:component.position withLength:[component.text length]];
+                    [self applyColor:[Utilities hexStringFromColor:[self.appBranding brandedColor]] toText:attrString atPosition:component.position withLength:[component.text length]];
 #endif
 					//[self applyBoldStyleToText:attrString atPosition:component.position withLength:[component.text length]];
 					//[self applySingleUnderlineText:attrString atPosition:component.position withLength:[component.text length]];
