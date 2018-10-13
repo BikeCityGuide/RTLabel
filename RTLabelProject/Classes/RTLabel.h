@@ -40,10 +40,10 @@
 
 typedef enum
 {
-	RTTextAlignmentRight = kCTRightTextAlignment,
-	RTTextAlignmentLeft = kCTLeftTextAlignment,
-	RTTextAlignmentCenter = kCTCenterTextAlignment,
-	RTTextAlignmentJustify = kCTJustifiedTextAlignment
+	RTTextAlignmentRight = kCTTextAlignmentRight,
+	RTTextAlignmentLeft = kCTTextAlignmentLeft,
+	RTTextAlignmentCenter = kCTTextAlignmentCenter,
+	RTTextAlignmentJustify = kCTTextAlignmentNatural
 } RTTextAlignment;
 
 typedef enum
